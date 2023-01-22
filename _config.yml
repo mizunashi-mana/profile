@@ -1,0 +1,10 @@
+title: Mizunashi Mana's Profile
+description: ''
+twitter_username: Mizunashi_Mana
+github_username: mizunashi-mana
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
