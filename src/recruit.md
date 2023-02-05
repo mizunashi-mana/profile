@@ -1,3 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="index, follow" />
+
+<link rel="shortcut icon" href="./asset/favicon.ico" type="image/x-icon">
+<link rel="icon" href="./asset/favicon.ico" type="image/x-icon">
+
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#555">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#555">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- Microsoft EDGE -->
+<meta name="msapplication-TileColor" content="#555">
+
+<title>リクルータ向けプロフィール</title>
+
+<meta name="author" content="Mizunashi Mana" />
+<meta name="description" content="水無麻那 (Mizunashi Mana) のリクルータ向け自己紹介" />
+<meta property="og:site_name" content="リクルータ向けプロフィール"/>
+<meta property="og:type" content="profile"/>
+<meta property="og:title" content="リクルータ向けプロフィール"/>
+<meta property="og:description" content="水無麻那 (Mizunashi Mana) のリクルータ向け自己紹介"/>
+<meta property="og:locale" content="ja"/>
+<meta property="og:url" content="https://mizunashi-mana.github.io/recruit.html"/>
+<meta property="og:image" content="./asset/profile.png">
+
+<link rel="stylesheet" href="./markdown.css">
+<script defer src="./markdown.js"></script>
+</head>
+<body><article class="markdown-body">
+
 # リクルータ向けプロフィール
 
 **現状，積極的に仕事は探していない．**
@@ -134,7 +173,7 @@ SQL フロント:
 直列化:
 
 * Apache Thrift: まあまあできる (3年以上)
-* Protocol Buffer: 少しできる (3年以上) 
+* Protocol Buffer: 少しできる (3年以上)
 
 暗号化:
 
@@ -232,3 +271,5 @@ CI/CD:
 ドキュメント管理:
 
 * Confluence: 少しできる (3年以上)
+
+</article></body></html>

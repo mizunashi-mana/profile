@@ -1,6 +1,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const RemarkHTMLPlugin = import("remark-html");
 
 const isProduction = process.env.NODE_ENV == "production";
 
@@ -8,8 +9,19 @@ const stylesHandler = isProduction
     ? MiniCssExtractPlugin.loader
     : "style-loader";
 
+const htmlUrlFilter = (attribute, value, resourcePath) => {
+    if (/(main|markdown).(js|css)$/.test(value)) {
+        return false;
+    }
+
+    return true;
+};
+
 const config = {
-    entry: "./src/main.ts",
+    entry: {
+        main: "./src/main.ts",
+        markdown: "./src/markdown.ts"
+    },
     output: {
         path: path.resolve(__dirname, "dist"),
         assetModuleFilename: "asset/[hash][ext][query]",
@@ -17,18 +29,41 @@ const config = {
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: './src/index.html'
+            template: './src/index.html',
+            inject: false,
         }),
         new HtmlWebpackPlugin({
             filename: 'recruit.html',
-            template: './src/recruit.html'
+            template: './src/recruit.md',
+            inject: false,
         })
     ],
     module: {
         rules: [
             {
                 test: /\.html$/i,
-                loader: "html-loader"
+                loader: "html-loader",
+                options: {
+                    sources: {
+                        urlFilter: htmlUrlFilter,
+                    }
+                }
+            },
+            {
+                test: /\.md$/,
+                use: [
+                    {
+                        loader: "html-loader",
+                        options: {
+                            sources: {
+                                urlFilter: htmlUrlFilter,
+                            }
+                        },
+                    },
+                    {
+                        loader: "markdown-loader",
+                    },
+                ],
             },
             {
                 test: /\.(ts|tsx)$/i,
