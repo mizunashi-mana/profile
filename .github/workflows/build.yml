@@ -27,5 +27,6 @@ jobs:
                     npm install
                     ls
                     ls node_modules/
-                    ls node_modules/@fontawesome/
+                    ls node_modules/@fortawesome/
+                    ls node_modules/@fortawesome/free-brands-svg-icons/
                     npm run build
