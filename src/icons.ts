@@ -1,3 +1,9 @@
+/**
+@license CC-BY-4.0 Font Awesome Free Icons: Copyright (c) 2022 Fonticons, Inc. (https://fontawesome.com)
+@license OFL-1.1 Font Awesome Free Fonts: Copyright (c) 2022 Fonticons, Inc. (https://fontawesome.com)
+@license MIT Font Awesome Free Code: Copyright (c) 2022 Fonticons, Inc. (https://fontawesome.com)
+*/
+
 import { dom, library } from "@fortawesome/fontawesome-svg-core";
 
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";

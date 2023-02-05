@@ -1,5 +1,9 @@
-@import "github-markdown-css/github-markdown.css";
 @import "./styles/github-corner-right.css";
+
+/*
+! MIT License | Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+*/
+@import "github-markdown-css/github-markdown.css";
 
 .markdown-body {
     box-sizing: border-box;

@@ -2,12 +2,10 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const RemarkHTMLPlugin = import("remark-html");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 const isProduction = process.env.NODE_ENV == "production";
-
-const stylesHandler = isProduction
-    ? MiniCssExtractPlugin.loader
-    : "style-loader";
 
 const htmlUrlFilter = (attribute, value, resourcePath) => {
     if (/(main|markdown).(js|css)$/.test(value)) {
@@ -24,6 +22,7 @@ const config = {
     },
     output: {
         path: path.resolve(__dirname, "dist"),
+        filename: "[name].js",
         assetModuleFilename: "asset/[hash][ext][query]",
     },
     plugins: [
@@ -36,7 +35,10 @@ const config = {
             filename: 'recruit.html',
             template: './src/recruit.md',
             inject: false,
-        })
+        }),
+        new MiniCssExtractPlugin({
+            filename: "[name].css"
+        }),
     ],
     module: {
         rules: [
@@ -72,13 +74,19 @@ const config = {
             },
             {
                 test: /\.css$/i,
-                use: [stylesHandler, "css-loader", "postcss-loader"],
+                use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
             },
             {
                 test: /\.(ico|eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
                 type: "asset",
             },
         ],
+    },
+    optimization: {
+        minimizer: [
+            new CssMinimizerPlugin(),
+            new TerserPlugin(),
+        ]
     },
     resolve: {
         extensions: [".tsx", ".ts", ".jsx", ".js"],
@@ -88,8 +96,6 @@ const config = {
 module.exports = () => {
     if (isProduction) {
         config.mode = "production";
-
-        config.plugins.push(new MiniCssExtractPlugin());
     } else {
         config.mode = "development";
     }
