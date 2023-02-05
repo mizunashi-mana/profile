@@ -1,4 +1,4 @@
-name: NodeJS with Webpack
+name: Build and Deploy
 
 on:
     push:
@@ -7,7 +7,7 @@ on:
         branches: [ "main" ]
 
 jobs:
-    build:
+    test:
         runs-on: ubuntu-latest
 
         strategy:
@@ -15,7 +15,7 @@ jobs:
                 node-version: [18.x]
 
         steps:
-            - uses: actions/checkout@v3
+            -   uses: actions/checkout@v3
 
             -   name: Use Node.js ${{ matrix.node-version }}
                 uses: actions/setup-node@v3
@@ -26,3 +26,19 @@ jobs:
                 run: |
                     npm install
                     npm run build
+
+    deploy:
+        needs: test
+
+        runs-on: ubuntu-latest
+        if: github.ref == 'refs/heads/main'
+
+        steps:
+            -   uses: actions/checkout@v3
+
+            -   name: Deploy
+                uses: peaceiris/actions-gh-pages@v3
+                with:
+                    github_token: ${{ secrets.GITHUB_TOKEN }}
+                publish_dir: ./dist
+                publish_branch: gh-pages
