@@ -34,6 +34,15 @@
 
 <link rel="stylesheet" href="./markdown.css">
 <script defer src="./markdown.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YZTJG0VBE4"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YZTJG0VBE4');
+</script>
 </head>
 <body><article class="markdown-body">
 
@@ -65,9 +74,10 @@ TODO
 
 ## 連絡先
 
-* [Twitter](https://twitter.com/Mizunashi_Mana) の DM が確実です．
-* <mailto:axnnoindexr11@gmail.com> でも受け付けています．
-* 反応が遅れがちですが，[Discord](https://discord.com/) の DM でも可です．事前に他の手段で連絡がもらえると確実です．ユーザ名は `Mizunashi Mana#2330` になります．
+* [Mastodon (mizunashi@vivaldi.net)](https://social.vivaldi.net/@mizunashi) の DM が確実です。
+* axnnoindexr11@gmail.com でも受け付けています。
+* 反応が遅れがちですが、[Twitter (@Mizunashi_Mana)](https://twitter.com/Mizunashi_Mana) の DM でも受け付けています。事前に他の手段で連絡がもらえると確実です。
+* 反応が遅れがちですが、[Discord](https://discord.com/) の DM でも可です。事前に他の手段で連絡がもらえると確実です。ユーザ名は `Mizunashi Mana#2330` になります。
 
 ## 技術・経験
 

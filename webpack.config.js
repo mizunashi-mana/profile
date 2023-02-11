@@ -36,6 +36,11 @@ const config = {
             template: './src/recruit.md',
             inject: false,
         }),
+        new HtmlWebpackPlugin({
+            filename: 'privacy-policy.html',
+            template: './src/privacy-policy.md',
+            inject: false,
+        }),
         new MiniCssExtractPlugin({
             filename: "[name].css"
         }),
