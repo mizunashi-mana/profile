@@ -75,7 +75,7 @@ TODO
 ## 連絡先
 
 * [Mastodon (mizunashi_mana@mstdn.mizunashi.work)](https://mstdn.mizunashi.work/@mizunashi_mana) の DM が確実です。
-* [axnnoindexr11@gmail.com](mailto:axnnoindexr11@gmail.com) でも受け付けています。
+* [contact@mizunashi.work](mailto:contract@mizunashi.work) でも受け付けています。
 * 反応が遅れがちですが、[Twitter (@Mizunashi_Mana)](https://twitter.com/Mizunashi_Mana) の DM でも受け付けています。事前に他の手段で連絡がもらえると確実です。
 * 反応が遅れがちですが、[Discord](https://discord.com/) の DM でも可です。事前に他の手段で連絡がもらえると確実です。ユーザ名は `Mizunashi Mana#2330` になります。
 
