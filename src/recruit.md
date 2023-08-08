@@ -48,8 +48,6 @@
 
 # リクルータ向けプロフィール
 
-**現状，積極的に仕事は探していない．**
-
 ## 興味・関心・方向性
 
 TODO
@@ -75,8 +73,8 @@ TODO
 ## 連絡先
 
 * [Mastodon (mizunashi_mana@mstdn.mizunashi.work)](https://mstdn.mizunashi.work/@mizunashi_mana) の DM が確実です。
-* [contact@mizunashi.work](mailto:contract@mizunashi.work) でも受け付けています。
-* 反応が遅れがちですが、[Twitter (@Mizunashi_Mana)](https://twitter.com/Mizunashi_Mana) の DM でも受け付けています。事前に他の手段で連絡がもらえると確実です。
+* [メール (contact@mizunashi.work)](mailto:contract@mizunashi.work) でも受け付けています。
+* 反応が遅れがちですが、[X (@Mizunashi_Mana)](https://twitter.com/Mizunashi_Mana) の DM でも受け付けています。事前に他の手段で連絡がもらえると確実です。
 * 反応が遅れがちですが、[Discord](https://discord.com/) の DM でも可です。事前に他の手段で連絡がもらえると確実です。ユーザ名は `Mizunashi Mana#2330` になります。
 
 ## 技術・経験
