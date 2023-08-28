@@ -29,7 +29,7 @@
 <meta property="og:title" content="リクルータ向けプロフィール"/>
 <meta property="og:description" content="水無麻那 (Mizunashi Mana) のリクルータ向け自己紹介"/>
 <meta property="og:locale" content="ja"/>
-<meta property="og:url" content="https://mizunashi-mana.github.io/recruit.html"/>
+<meta property="og:url" content="https://mizunashi-mana.github.io/profile/recruit.html"/>
 <meta property="og:image" content="./asset/profile.png">
 
 <link rel="stylesheet" href="./markdown.css">
