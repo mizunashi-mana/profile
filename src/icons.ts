@@ -6,6 +6,7 @@
 
 import { dom, library } from "@fortawesome/fontawesome-svg-core";
 
+import { faComment } from "@fortawesome/free-solid-svg-icons/faComment"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
 import { faBook } from "@fortawesome/free-solid-svg-icons/faBook";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons/faMagnifyingGlass";
@@ -14,6 +15,7 @@ import { faTwitter } from "@fortawesome/free-brands-svg-icons/faTwitter";
 import { faMastodon } from "@fortawesome/free-brands-svg-icons/faMastodon";
 
 library.add(
+    faComment,
     faGithub,
     faEnvelope,
     faTwitter,
