@@ -20,13 +20,13 @@
 <!-- Microsoft EDGE -->
 <meta name="msapplication-TileColor" content="#555">
 
-<title>リクルータ向けプロフィール</title>
+<title>職務経歴書</title>
 
 <meta name="author" content="Mizunashi Mana" />
 <meta name="description" content="水無麻那 (Mizunashi Mana) のリクルータ向け自己紹介" />
-<meta property="og:site_name" content="リクルータ向けプロフィール"/>
+<meta property="og:site_name" content="職務経歴書"/>
 <meta property="og:type" content="profile"/>
-<meta property="og:title" content="リクルータ向けプロフィール"/>
+<meta property="og:title" content="職務経歴書"/>
 <meta property="og:description" content="水無麻那 (Mizunashi Mana) のリクルータ向け自己紹介"/>
 <meta property="og:locale" content="ja"/>
 <meta property="og:url" content="https://mizunashi-mana.github.io/profile/recruit.html"/>
@@ -46,7 +46,7 @@
 </head>
 <body><article class="markdown-body">
 
-# リクルータ向けプロフィール
+# 職務経歴書
 
 ## 興味・関心・方向性
 
@@ -56,6 +56,7 @@
     - ビジネスと品質双方を妥協させ、両立させるようなサービス作りの経験を積んでいき、開発者として価値あるサービス提供に貢献していきたい。
 * 技術での解決と技術以外での解決の両立と、技術解決の優先。
     - 技術以外で解決した方がいいことは、技術的解決にこだわらず技術以外の手段で解決していけるように。
+    - 技術者同士だけでなく、プロダクトマネージャ・営業・企画・サポート・QAなどとも積極的にコミュニケーションを取り、需要と品質向上に繋がる点を把握し、適切な判断と行動が取れるよう情報共有ができる方法を模索し続けたい。
     - 技術での解決と技術以外での解決が拮抗する時は、技術での解決の方を選択した方が良いと言える実力を持ちたい。
     - どちらの解決が筋がいいかを見極められる経験を積み、技術にこだわらないサービス価値優先の仕事人になりつつ、自分の持ち味を技術での解決の方に置き、技術発展にも貢献していけるようになりたい。
 * 一般的に使われるプログラミング言語を作ってみたい。その為、試行錯誤中。
@@ -84,6 +85,8 @@
 
 ## 経歴
 
+詳細な経歴は Findy を見ていただくか、お問い合わせください。
+
 ### 学歴
 
 電気通信大学 情報理工学研究科　情報・ネットワーク工学専攻 2019年度修士
@@ -92,12 +95,17 @@
 
 1. 2020年 LINE株式会社 新卒入社 (現在籍)
 
-## 連絡先
+## 連絡先・アカウントID
 
-* [Mastodon (mizunashi_mana@mstdn.mizunashi.work)](https://mstdn.mizunashi.work/@mizunashi_mana) の DM が確実です。
-* [メール (contact@mizunashi.work)](mailto:contract@mizunashi.work) でも受け付けています。
-* 反応が遅れがちですが、[X (@Mizunashi_Mana)](https://twitter.com/Mizunashi_Mana) の DM でも受け付けています。事前に他の手段で連絡がもらえると確実です。
-* 反応が遅れがちですが、[Discord](https://discord.com/) の DM でも可です。事前に他の手段で連絡がもらえると確実です。ユーザ名は `Mizunashi Mana#2330` になります。
+* Fediverse: [@me@ff.mizunashi.work](https://ff.mizunashi.work/@me)
+    - 個人運用の Firefish サーバでのアカウントで、DM を貰えれば大体反応できます。
+* Fediverse: [@mizunashi@vivaldi.net](https://social.vivaldi.net/@mizunashi)
+    - [@me@ff.mizunashi.work](https://ff.mizunashi.work/@me)が死んでいたら、こっちを見ています。
+* メール: [contact@mizunashi.work](mailto:contact@mizunashi.work)
+    - 大体反応できます。
+* Discord: `Mizunashi Mana#2330`
+    - 反応が遅れがちです。事前に他の手段で連絡を貰えると確実です。
+* GitHub: [mizunashi-mana](https://github.com/mizunashi-mana)
 
 ## 技術・経験
 
@@ -112,13 +120,15 @@
 * 少しできる
     - この技術を使ったことがあるが、仕様について把握してない部分も多く、使い慣れてはいない。
 
-括弧内は付き合っている年数．
+括弧内は付き合っている年数。
 
 ### 資格
 
 現取得済み資格なし。
 
-### 実績
+### 公開実績
+
+業務に関わる詳細な実績は Findy を見ていただくか、お問い合わせください。
 
 * 技術ブログ: https://mizunashi-mana.github.io/blog/
     - 不定期で更新頻度も低いが、定常的に1日100件ほどアクセス数あり
@@ -170,7 +180,7 @@
 
 #### フレームワーク
 
-基本的には，どんなフレームワークでも1週間ほどあれば職務に従事できるレベルになれる自信がある．
+基本的には，どんなフレームワークでも数週間ほどあれば職務に従事できるレベルになれる自信がある．
 
 Web フロント:
 
@@ -277,7 +287,7 @@ CI/CD:
 
 #### ツール
 
-基本的には，正しいマニュアルがあればどういうツールも動かせる自信があるが，かなり使い込まないと使いこなすところまではいけない傾向にある．
+基本的には、正しいマニュアルがあればどういうツールも動かせる自信があるが、かなり使い込まないと使いこなすところまではいけない傾向にある。
 
 エディタ:
 
@@ -290,7 +300,7 @@ CI/CD:
 
 #### OS・ディストリビューション
 
-カーネルには特に深い造詣はない．ソフトのインストールや設定は調べながらできる自信はあるが，深い洞察を伴ったセキュリティの設定，カーネルレベルでの機能拡張などは行えない．
+カーネルには特に深い造詣はない。ソフトのインストールや設定は調べながらできる自信はあるが、深い洞察を伴ったセキュリティの設定、カーネルレベルでの機能拡張などは行えない。
 
 * Debian GNU/Linux: まあまあできる (3年以上)
 * CentOS: まあまあできる (3年以上)
