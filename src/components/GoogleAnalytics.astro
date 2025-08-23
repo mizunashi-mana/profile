@@ -1,0 +1,17 @@
+---
+export interface Props {
+  measurementId: string;
+}
+
+const { measurementId } = Astro.props;
+---
+
+<!-- Google tag (gtag.js) -->
+<script async src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`} is:inline></script>
+<script is:inline define:vars={{ measurementId }}>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', measurementId);
+</script>

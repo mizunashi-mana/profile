@@ -1,0 +1,357 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TabContainer from '../components/TabContainer.astro';
+import GoogleAnalytics from '../components/GoogleAnalytics.astro';
+
+const title = "職務経歴書";
+const description = "水無麻那 (Mizunashi Mana) のリクルータ向け自己紹介";
+---
+
+<Layout title={title} description={description}>
+  <main class="mb-auto">
+    <div class="max-w-6xl mx-auto px-4 py-8">
+      <div class="text-center mb-8">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">職務経歴書</h1>
+        <p class="text-xl text-gray-600">水無麻那 (Mizunashi Mana)</p>
+        <p class="text-lg text-gray-500 mt-2">ソフトウェアエンジニア</p>
+      </div>
+
+      <TabContainer>
+        <div slot="overview" class="prose prose-lg prose-gray max-w-none">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+                <i class="fa-solid fa-graduation-cap text-indigo-600 mr-2"></i>
+                学歴
+              </h2>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <p class="font-medium">電気通信大学 情報理工学研究科</p>
+                <p class="text-gray-600">情報・ネットワーク工学専攻</p>
+                <p class="text-sm text-gray-500">2019年度修士</p>
+              </div>
+            </div>
+
+            <div>
+              <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+                <i class="fa-solid fa-briefcase text-indigo-600 mr-2"></i>
+                職歴
+              </h2>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <p class="font-medium">LINE株式会社</p>
+                <p class="text-gray-600">2020年 新卒入社 (現在籍)</p>
+                <p class="text-sm text-gray-500">ソフトウェアエンジニア</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+              <i class="fa-solid fa-star text-indigo-600 mr-2"></i>
+              強み
+            </h2>
+            <div class="grid md:grid-cols-3 gap-6">
+              <div class="bg-blue-50 p-4 rounded-lg">
+                <h3 class="font-semibold text-blue-800 mb-2">主体的な姿勢</h3>
+                <p class="text-blue-700 text-sm">プロダクト全体の価値向上を意識し、主体的に課題解決に取り組む</p>
+              </div>
+              <div class="bg-green-50 p-4 rounded-lg">
+                <h3 class="font-semibold text-green-800 mb-2">継続的改善</h3>
+                <p class="text-green-700 text-sm">既存資産の改善活動を通じて、より良いプロダクト提供を実現</p>
+              </div>
+              <div class="bg-purple-50 p-4 rounded-lg">
+                <h3 class="font-semibold text-purple-800 mb-2">論理的思考</h3>
+                <p class="text-purple-700 text-sm">客観的な分析と情報共有により、理想的な方向性を見出す</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+              <i class="fa-solid fa-envelope text-indigo-600 mr-2"></i>
+              連絡先
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+              <a href="mailto:contact@mizunashi.work" class="flex items-center p-3 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
+                <i class="fa-solid fa-envelope text-blue-600 mr-3"></i>
+                <span class="text-blue-800">contact@mizunashi.work</span>
+              </a>
+              <a href="https://github.com/mizunashi-mana" target="_blank" rel="noopener" class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                <i class="fa-brands fa-github text-gray-600 mr-3"></i>
+                <span class="text-gray-800">GitHub</span>
+              </a>
+              <a href="https://ff.mizunashi.work/@me" target="_blank" rel="noopener" class="flex items-center p-3 bg-yellow-50 rounded-lg hover:bg-yellow-100 transition-colors">
+                <i class="fa-solid fa-comment text-yellow-600 mr-3"></i>
+                <span class="text-yellow-800">Fediverse</span>
+              </a>
+              <a href="https://social.vivaldi.net/@mizunashi" target="_blank" rel="noopener" class="flex items-center p-3 bg-indigo-50 rounded-lg hover:bg-indigo-100 transition-colors">
+                <i class="fa-brands fa-mastodon text-indigo-600 mr-3"></i>
+                <span class="text-indigo-800">Mastodon</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div slot="skills" class="prose prose-lg prose-gray max-w-none">
+          <div class="grid lg:grid-cols-2 gap-8">
+            <div>
+              <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+                <i class="fa-solid fa-code text-indigo-600 mr-2"></i>
+                プログラミング言語
+              </h2>
+              <div class="space-y-3">
+                <div class="flex justify-between items-center p-3 bg-green-50 rounded-lg">
+                  <span class="font-medium text-green-800">Haskell</span>
+                  <span class="text-sm bg-green-200 text-green-800 px-2 py-1 rounded">かなりできる (&gt; 3年)</span>
+                </div>
+                <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                  <span class="font-medium text-blue-800">Scala</span>
+                  <span class="text-sm bg-blue-200 text-blue-800 px-2 py-1 rounded">まあまあできる (&gt; 3年)</span>
+                </div>
+                <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                  <span class="font-medium text-blue-800">TypeScript</span>
+                  <span class="text-sm bg-blue-200 text-blue-800 px-2 py-1 rounded">まあまあできる (&gt; 3年)</span>
+                </div>
+                <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                  <span class="font-medium text-blue-800">Python</span>
+                  <span class="text-sm bg-blue-200 text-blue-800 px-2 py-1 rounded">まあまあできる (&gt; 3年)</span>
+                </div>
+                <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                  <span class="font-medium text-blue-800">Java</span>
+                  <span class="text-sm bg-blue-200 text-blue-800 px-2 py-1 rounded">まあまあできる (&gt; 3年)</span>
+                </div>
+                <div class="flex justify-between items-center p-3 bg-yellow-50 rounded-lg">
+                  <span class="font-medium text-yellow-800">Rust</span>
+                  <span class="text-sm bg-yellow-200 text-yellow-800 px-2 py-1 rounded">少しできる (&lt; 1年)</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+                <i class="fa-solid fa-layer-group text-indigo-600 mr-2"></i>
+                フレームワーク・技術
+              </h2>
+              <div class="space-y-4">
+                <div>
+                  <h3 class="font-semibold text-gray-700 mb-2">Web フロント</h3>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Bootstrap</span>
+                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Vue</span>
+                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-700 mb-2">Web サーバ</h3>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Finagle</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Finatra</span>
+                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Spring Boot</span>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-700 mb-2">データベース</h3>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">MySQL</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Redis</span>
+                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Elasticsearch</span>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-700 mb-2">インフラ・ツール</h3>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Docker</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Ansible</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Jenkins</span>
+                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Kubernetes</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+              <i class="fa-solid fa-trophy text-indigo-600 mr-2"></i>
+              公開実績
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="border border-gray-200 rounded-lg p-4">
+                <h3 class="font-semibold text-gray-800 mb-2">技術ブログ</h3>
+                <p class="text-gray-600 text-sm mb-2">定常的に1日100件ほどアクセス数</p>
+                <a href="https://mizunashi-mana.github.io/blog/" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 text-sm">mizunashi-mana.github.io/blog/</a>
+              </div>
+              <div class="border border-gray-200 rounded-lg p-4">
+                <h3 class="font-semibold text-gray-800 mb-2">プログラミング言語ノート</h3>
+                <p class="text-gray-600 text-sm mb-2">形式的ノート（PDF）</p>
+                <a href="https://mizunashi-mana.github.io/proglang-notes/main.pdf" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 text-sm">技術ノートを見る</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div slot="career" class="prose prose-lg prose-gray max-w-none">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-6">
+            <i class="fa-solid fa-chart-line text-indigo-600 mr-2"></i>
+            キャリアの方向性
+          </h2>
+
+          <div class="space-y-8">
+            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg">
+              <h3 class="text-xl font-semibold text-blue-800 mb-3">
+                <i class="fa-solid fa-balance-scale text-blue-600 mr-2"></i>
+                ビジネスと品質の両立
+              </h3>
+              <ul class="text-blue-700 space-y-2">
+                <li>• ビジネス価値と技術品質を両立したサービス開発</li>
+                <li>• 持続可能なサービス提供による長期的なユーザ価値創出</li>
+                <li>• 開発者として価値あるサービス提供への貢献</li>
+              </ul>
+            </div>
+
+            <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-lg">
+              <h3 class="text-xl font-semibold text-green-800 mb-3">
+                <i class="fa-solid fa-cogs text-green-600 mr-2"></i>
+                技術解決の優先と柔軟性
+              </h3>
+              <ul class="text-green-700 space-y-2">
+                <li>• 技術解決と非技術解決の適切な使い分け</li>
+                <li>• 多職種との積極的なコミュニケーション（PdM・営業・企画・QA等）</li>
+                <li>• 技術発展への貢献を意識した判断力の向上</li>
+              </ul>
+            </div>
+
+            <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg">
+              <h3 class="text-xl font-semibold text-purple-800 mb-3">
+                <i class="fa-solid fa-rocket text-purple-600 mr-2"></i>
+                プログラミング言語開発への挑戦
+              </h3>
+              <ul class="text-purple-700 space-y-2">
+                <li>• 一般的に使われるプログラミング言語の開発</li>
+                <li>• ライブラリ有料配布によるエコシステム構築</li>
+                <li>• 寄付に頼らないビジネスモデルの実現</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">
+              <i class="fa-solid fa-heart text-indigo-600 mr-2"></i>
+              興味・関心
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+              <div class="text-center p-4">
+                <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <i class="fa-solid fa-globe text-orange-600 text-2xl"></i>
+                </div>
+                <h3 class="font-semibold text-gray-800 mb-2">社会的影響力</h3>
+                <p class="text-gray-600 text-sm">自身の貢献が実感でき、社会をより良い方向に導く領域への関心</p>
+              </div>
+
+              <div class="text-center p-4">
+                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <i class="fa-solid fa-lightbulb text-blue-600 text-2xl"></i>
+                </div>
+                <h3 class="font-semibold text-gray-800 mb-2">技術探究</h3>
+                <p class="text-gray-600 text-sm">人々の生活を快適にする技術分野への強い好奇心</p>
+              </div>
+
+              <div class="text-center p-4">
+                <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <i class="fa-solid fa-arrow-up text-green-600 text-2xl"></i>
+                </div>
+                <h3 class="font-semibold text-gray-800 mb-2">継続的挑戦</h3>
+                <p class="text-gray-600 text-sm">より良い選択肢の探求と斬新な最適化への興味</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div slot="conditions" class="prose prose-lg prose-gray max-w-none">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-6">
+            <i class="fa-solid fa-handshake text-indigo-600 mr-2"></i>
+            職務条件
+          </h2>
+
+          <div class="grid lg:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-4">
+                <i class="fa-solid fa-check-circle text-green-600 mr-2"></i>
+                必須条件
+              </h3>
+              <div class="space-y-4">
+                <div class="bg-green-50 p-4 rounded-lg">
+                  <h4 class="font-semibold text-green-800 mb-2">職種</h4>
+                  <p class="text-green-700">ソフトウェア開発職またはプログラミング言語関連の研究職</p>
+                  <p class="text-green-600 text-sm mt-1">分野：サーバ・Web フロント・Native フロント・組み込み等</p>
+                </div>
+
+                <div class="bg-blue-50 p-4 rounded-lg">
+                  <h4 class="font-semibold text-blue-800 mb-2">年収</h4>
+                  <p class="text-blue-700">600万円以上</p>
+                  <p class="text-blue-600 text-sm mt-1">希望：800万円以上（福利厚生・社会的意義により調整可能）</p>
+                </div>
+
+                <div class="bg-purple-50 p-4 rounded-lg">
+                  <h4 class="font-semibold text-purple-800 mb-2">勤務地</h4>
+                  <p class="text-purple-700">オフィス所在地不問</p>
+                  <p class="text-purple-600 text-sm mt-1">リモート勤務体制が整っていることが前提</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-4">
+                <i class="fa-solid fa-star text-yellow-600 mr-2"></i>
+                希望条件
+              </h3>
+              <div class="space-y-4">
+                <div class="bg-yellow-50 p-4 rounded-lg">
+                  <h4 class="font-semibold text-yellow-800 mb-2">勤務制度</h4>
+                  <p class="text-yellow-700">フレックス制度または裁量労働制</p>
+                  <p class="text-yellow-600 text-sm mt-1">その日の都合で融通の効く働き方</p>
+                </div>
+
+                <div class="bg-indigo-50 p-4 rounded-lg">
+                  <h4 class="font-semibold text-indigo-800 mb-2">開発体制</h4>
+                  <p class="text-indigo-700">短いリリースサイクル</p>
+                  <p class="text-indigo-600 text-sm mt-1">ユーザフィードバックを早く取り入れやすい環境</p>
+                </div>
+
+                <div class="bg-teal-50 p-4 rounded-lg">
+                  <h4 class="font-semibold text-teal-800 mb-2">分析環境</h4>
+                  <p class="text-teal-700">データ分析環境の整備</p>
+                  <p class="text-teal-600 text-sm mt-1">定量・定性指標のバランスが取れた環境</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 bg-gray-50 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">
+              <i class="fa-solid fa-info-circle text-blue-600 mr-2"></i>
+              詳細情報
+            </h3>
+            <p class="text-gray-700 mb-4">
+              より詳細な経歴や実績については、以下からお問い合わせいただくか、Findyをご確認ください。
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="mailto:contact@mizunashi.work" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                <i class="fa-solid fa-envelope mr-2"></i>
+                お問い合わせ
+              </a>
+              <span class="inline-flex items-center px-4 py-2 bg-gray-200 text-gray-700 rounded-lg">
+                <i class="fa-solid fa-search mr-2"></i>
+                Findy で詳細確認
+              </span>
+            </div>
+          </div>
+        </div>
+      </TabContainer>
+    </div>
+  </main>
+
+  <GoogleAnalytics measurementId="G-YZTJG0VBE4" />
+</Layout>

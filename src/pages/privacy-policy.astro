@@ -1,0 +1,17 @@
+---
+import GoogleAnalytics from '../components/GoogleAnalytics.astro';
+import Layout from '../layouts/Layout.astro';
+import MarkdownLayout from '../layouts/MarkdownLayout.astro';
+import { getEntry } from 'astro:content';
+
+const entry = await getEntry('markdown', 'privacy-policy');
+const { Content } = await entry.render();
+const { title, description } = entry.data;
+---
+
+<Layout title={title} description={description}>
+  <MarkdownLayout>
+    <Content />
+  </MarkdownLayout>
+  <GoogleAnalytics measurementId="G-YZTJG0VBE4" />
+</Layout>

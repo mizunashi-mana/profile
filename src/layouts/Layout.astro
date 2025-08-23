@@ -1,0 +1,65 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "水無麻那 (Mizunashi Mana) の自己紹介・ポータルサイト" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#555">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#555">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#555">
+
+    <title>{title}</title>
+
+    <meta name="author" content="Mizunashi Mana" />
+    <meta name="description" content={description} />
+    <meta property="og:site_name" content="水無麻那のホームページ"/>
+    <meta property="og:type" content="profile"/>
+    <meta property="og:title" content={title}/>
+    <meta property="og:description" content={description}/>
+    <meta property="og:locale" content="ja"/>
+    <meta property="og:url" content="https://mizunashi-mana.github.io/"/>
+    <meta property="og:image" content="/profile.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  </head>
+  <body>
+    <div class="h-screen flex flex-col">
+      <slot />
+
+      <footer class="bg-gray-200 bg-opacity-75">
+        <div class="px-5 py-4 mx-auto flex flex-wrap flex-col sm:flex-row">
+          <p class="text-sm sm:text-left text-center">
+            © 2023 Mizunashi Mana
+          </p>
+          <p class="text-sm sm:text-left text-center">
+            &nbsp; • &nbsp;
+            <a href="/privacy-policy" target="_blank" class="font-semibold hover:text-indigo-600">
+              プライバシーポリシー
+            </a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

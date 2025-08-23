@@ -1,50 +1,7 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="HandheldFriendly" content="True" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="robots" content="index, follow" />
-
-<link rel="shortcut icon" href="./asset/favicon.ico" type="image/x-icon">
-<link rel="icon" href="./asset/favicon.ico" type="image/x-icon">
-
-<!-- Chrome, Firefox OS and Opera -->
-<meta name="theme-color" content="#555">
-<!-- Windows Phone -->
-<meta name="msapplication-navbutton-color" content="#555">
-<!-- iOS Safari -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<!-- Microsoft EDGE -->
-<meta name="msapplication-TileColor" content="#555">
-
-<title>プライバシーポリシー</title>
-
-<meta name="author" content="Mizunashi Mana" />
-<meta name="description" content="水無麻那 (Mizunashi Mana) のサイトのプライバシーポリシー" />
-<meta property="og:site_name" content="プライバシーポリシー"/>
-<meta property="og:type" content="profile"/>
-<meta property="og:title" content="プライバシーポリシー"/>
-<meta property="og:description" content="水無麻那 (Mizunashi Mana) のサイトのプライバシーポリシー"/>
-<meta property="og:locale" content="ja"/>
-<meta property="og:url" content="https://mizunashi-mana.github.io/privacy-policy.html"/>
-<meta property="og:image" content="./asset/profile.png">
-
-<link rel="stylesheet" href="./markdown.css">
-<script defer src="./markdown.js"></script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YZTJG0VBE4"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-YZTJG0VBE4');
-</script>
-</head>
-<body><article class="markdown-body">
+---
+title: "プライバシーポリシー"
+description: "水無麻那 (Mizunashi Mana) のサイトのプライバシーポリシー"
+---
 
 # プライバシーポリシー
 
@@ -115,11 +72,6 @@
 
 このプライバシーポリシーは、定期的に見直し随時改善していきます。ただし、当サイトは閲覧者の権利を何の予告もなく縮小することはありません。ポリシーの最終変更を公開した日付を常に明示し、参考情報として過去の変更概要も確認できるようにします。
 
-なお、過去の詳細な変更部分については以下の URL から参照できます。
-
-* https://github.com/mizunashi-mana/profile/blob/main/src/privacy-policy.md
-* 旧: https://github.com/mizunashi-mana/blog/commits/master/content/pages/3-privacy-policy.rst
-
 ## 変更履歴
 
 * 2023/02/11
@@ -132,5 +84,3 @@
     - 匿名化の例外として第三者サービスを追加しました。
 * 2019/03/29
     - プライバシーポリシーを公開しました。
-
-</article></body></html>
