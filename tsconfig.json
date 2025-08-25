@@ -1,13 +1,9 @@
 {
-    "compilerOptions": {
-        "allowSyntheticDefaultImports": true,
-        "noImplicitAny": true,
-        "module": "es6",
-        "moduleResolution": "node",
-        "target": "es5",
-        "allowJs": true
-    },
-    "include": [
-        "./src/**/*.ts"
-    ]
+  "extends": "astro/tsconfigs/strictest",
+  "compilerOptions": {
+    "exactOptionalPropertyTypes": false
+  },
+  "exclude": [
+    "node_modules"
+  ]
 }

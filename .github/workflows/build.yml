@@ -4,25 +4,14 @@ on:
     push:
         branches: [ "main" ]
     pull_request:
-        branches: [ "main" ]
 
 jobs:
     build:
         runs-on: ubuntu-latest
 
-        strategy:
-            matrix:
-                node-version: [18.x]
-
         steps:
-            -   uses: actions/checkout@v3
-
-            -   name: Use Node.js ${{ matrix.node-version }}
-                uses: actions/setup-node@v3
-                with:
-                    node-version: ${{ matrix.node-version }}
+            - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+            - uses: ./.github/actions/setup-devenv
 
             -   name: Build
-                run: |
-                    npm install
-                    npm run build
+                run: npm run build
